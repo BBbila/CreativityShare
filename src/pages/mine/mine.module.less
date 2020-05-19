@@ -1,0 +1,287 @@
+.mineWrap {
+  height: auto;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  padding-left: 207px;
+  padding-right: 207px;
+  padding-top: 98px;
+  overflow: hidden;
+  background-color: #eaddf0b0;
+  :global {
+    .detailsContainer {
+      width: 100%;
+      height: auto;
+      //background-color: rgb(241, 194, 91);
+      display: flex;
+      justify-content: space-around;
+      padding-bottom: 20px;
+      .mesleftCover {
+        width: 140px;
+        height: 640px;
+        .mesleft {
+          width: 140px;
+          height: 380px;
+          //background-color: yellowgreen;
+          display: flex;
+          flex-direction: column;
+          position: fixed;
+          top: 99px;
+          // left: 207px;优化点
+          left: calc((100vw - 1000px)/2 - 61px);
+          .usermsgbanner {
+            width: 120px;
+            height: auto;
+            background-color: rgb(245, 236, 231);
+            box-shadow: 3px 3px 3px rgba(128, 128, 128, 0.473);
+            display: flex;
+            flex-direction: column;
+            .touxiang {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+              width: 100%;
+              height: 70px;
+              //background-color: #fff;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-top: 10px;
+              .touxiangImg {
+                width: 70px;
+                height: 70px;
+                border-radius: 50px;
+              }
+            }
+            .name {
+              width: 100%;
+              height: 30px;
+              //background-color: rgb(161, 64, 64);
+              text-align: center;
+              line-height: 30px;
+              font-size: 17px;
+              font-weight: bold;
+              color: rgb(100, 51, 116);
+              font-family: '黑体';
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+            .fansbaner {
+              width: 100%;
+              height: 50px;
+              //background-color: rgb(199, 151, 151);
+              display: flex;
+              align-items: center;
+              border-top: 1px solid rgb(201, 197, 201);
+              .fansleft {
+                width: 30px;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                margin-left: 10px;
+                .fansImg {
+                  width: 30px;
+                  height: 30px;
+                }
+                .fanstitle {
+                  display: block;
+                  font-size: 13px;
+                  margin-top: 5px;
+                  text-align: center;
+                  line-height: 10px;
+                }
+              }
+              .fansnum {
+                margin-left: 8px;
+                font-size: 15px;
+              }
+            }
+            .pastesbaner {
+              width: 100%;
+              height: 50px;
+              //background-color: rgb(199, 151, 151);
+              display: flex;
+              align-items: center;
+              .pastesleft {
+                width: 30px;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                margin-left: 10px;
+                .pastesImg {
+                  width: 30px;
+                  height: 30px;
+                }
+                .pastestitle {
+                  display: block;
+                  font-size: 13px;
+                  margin-top: 5px;
+                  text-align: center;
+                  line-height: 10px;
+                }
+              }
+              .pastesnum {
+                margin-left: 8px;
+                font-size: 15px;
+              }
+            }
+            .lovebutton {
+              width: 100%;
+              height: 30px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-top: 10px;
+              margin-bottom: 10px;
+              .btn_love {
+                width: 80px;
+                cursor: pointer;
+                height: 30px;
+                outline: none;
+                border: 0;
+                border-radius: 20px;
+                color: rgb(245, 236, 231);
+                background-color: rgb(177, 145, 204);
+                &:hover {
+                  background-color: rgb(100, 51, 116);
+                }
+              }
+            }
+          }
+        }
+      }
+      .rightCover{
+        .mesrightCover {
+          width: 900px;
+          height: auto;
+          //background-color: darkorchid;
+          display: flex;
+          flex-direction: column;
+          .mesrightTopBanner {
+            width: 900px;
+            height: 60px;
+            background-color: rgb(211, 180, 226);
+            display: flex;
+            justify-content: start;
+            .mesrightTop {
+              text-align: center;
+              width: auto;
+              margin-left: 10px;
+              line-height: 60px;
+              font-size: 20px;
+            }
+          }
+          .mesrightContentBanner {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            .mrbanner{
+              width: 900px;
+              height: 500px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background-color: rgba(229, 203, 241, 0.541);
+              box-shadow:1px 1px 10px rgb(211, 180, 226);
+              .mrpushBanner {
+                height: 80px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .pushposts {
+                  width: 400px;
+                  height: 40px;
+                  padding: 10px 30px;
+                  display: block;
+                  outline: none;
+                  text-decoration: none;
+                  border: 2px  dotted rgb(202, 194, 194);
+                  color: rgb(141, 94, 161);
+                  font-size: 20px;
+                  font-family: '黑体';
+                  text-align: center;
+                  line-height: 40px;
+                }
+              }
+            }
+            .propseItemBanner {
+              display: flex;
+              cursor: pointer;
+              flex-direction: row;
+              align-items: center;
+              border-radius: 5px;
+              margin-bottom: 10px;
+              justify-content: space-around;
+              background-color: rgba(255, 244, 252, 0.658);
+              .proposeImg {
+                width: 100px;
+                height: 120px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 5px;
+                .pImg {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  border-radius: 5px;
+                }
+              }
+              .propseright {
+                flex:1;
+                height: 120px;
+                //background-color: yellowgreen;
+                display: flex;
+                flex-direction: column;
+                .propseHead {
+                  box-sizing: border-box;
+                  padding: 10px;
+                  text-align: left;
+                  font-size: 15px;
+                  color: black;
+                  line-height: 30px;
+                  height: 100px;
+                }
+                .propsefoot {
+                  width: 100%;
+                  height: 40px;
+                  display: flex;
+                  justify-content: flex-end;
+                  align-items: center;
+                  .getlovenum {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    width: 80px;
+                    //background-color: brown;
+                    .gImg {
+                      width: 20px;
+                      height: 20px;
+                    }
+                    .gnum {
+                      font-size: 13px;
+                      color: darkslategray;
+                    } 
+                  }
+                }
+              }
+              .deletebaner {
+                width: 40px;
+                height: 40px;
+                background-color: darksalmon;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                  width: 25px;
+                  height: 25px;
+                }
+                &:hover {
+                  background-color: rgb(241, 99, 52);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

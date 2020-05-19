@@ -1,0 +1,2 @@
+export const GET_HOTWORD_LIST = 'GET_HOTWORD_LIST'
+export const CHANGE_HOTWORD = 'CHANGE_HOTWORD'

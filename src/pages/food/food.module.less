@@ -1,0 +1,108 @@
+.foodWrap {
+  height: auto;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  padding-left: 207px;
+  padding-right: 207px;
+  padding-top: 128px;
+  overflow: hidden;
+  background-color: #eaddf0b0;
+  :global {
+    .postwrap {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-content: flex-start;
+      //background-color: burlywood;
+      .postbanner {
+        width: 1080px;
+        height: auto;
+        display: flex;
+        flex-flow: row wrap;
+        //background-color: rgb(135, 222, 150);
+        .post {
+          width: 220px;
+          height: 300px;
+          //background-color: cornflowerblue;
+          margin-bottom: 60px;
+          margin-left: 40px;
+          cursor: pointer;
+          .postCover {
+            width: 220px;
+            height: 240px;
+            border-radius: 10px;
+            background-color: rgb(157, 174, 207);
+            .cover {
+              width: 100%;
+              height: 100%;
+              border-radius: 10px;
+            }
+          }
+          .postHeaderBanner {
+            width: 220px;
+            height: 60px;
+            //background-color: rgb(122, 189, 59);
+            .postTitle {
+              width: 214px;
+              height: 35px;
+              padding-left: 6px;
+              //background-color: rgb(35, 128, 73);
+              font-size: 18px;
+              color: darkslategrey;
+              line-height: 30px;
+              font-weight: bold;
+              overflow: hidden;
+              text-overflow:ellipsis;
+              white-space: nowrap;
+            }
+            .postotherdesBanner {
+              width: 220px;
+              height: 25px;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              //background-color: rgb(203, 233, 216);
+              .postDate {
+                font-size: 13px;
+                //color: rgba(128, 128, 128, 0.76);
+                width: 100px;
+                height: 100%;
+                line-height: 24px;
+                padding-left: 6px;
+                //background-color: dimgray;
+              }
+              .postLove {
+                width: 85px;
+                height: 100%;
+                //background-color: rgb(214, 107, 107);
+                .love {
+                  width: 100%;
+                  height: 100%;
+                  //background-color: rgb(171, 185, 39);
+                  background-image: url('../../static/love.png');
+                  background-repeat: no-repeat;
+                  .lovenum {
+                    font-size: 13px;
+                    color: rgba(128, 128, 128, 0.76);
+                    padding-left: 28px;
+                    line-height: 20px;
+                  }
+                }
+              }
+            }
+          }
+          &:hover {
+            .postCover {
+              box-shadow: 2px 2px 10px #ddd;
+            }
+            .postTitle {
+              color: #611b58;
+            }
+          }
+        }
+      }
+    }
+  }
+}

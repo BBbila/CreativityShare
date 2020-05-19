@@ -1,0 +1,206 @@
+.index {
+  height: auto;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  padding-left: 207px;
+  padding-right: 207px;
+  padding-top: 98px;
+  overflow: hidden;
+  background-color: #eaddf0b0;
+  :global {
+    .swiperBanner {
+      width: 100%;
+      height: 500px;
+      background-color: #aef5a700;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+      .swiper-container {
+        --swiper-theme-color: #e2b4f0;
+        --swiper-pagination-color: rgba(255, 255, 255, 0.75);
+        width: 100%;
+        height: 400px;
+        border-radius: 8px;
+        background-color: #cfd8e2;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        overflow: hidden;
+        list-style: none;
+        padding: 0;
+        z-index: 1;
+        margin-bottom: 20px;
+        box-shadow:2px 2px 13px #333333bb;
+        .swiper-wrapper {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          z-index: 1;
+          display: flex;
+          transition-property: transform;
+          box-sizing: content-box;
+          .swiper-slide {
+            flex-shrink: 0;
+            cursor: pointer;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transition-property: transform;
+            // line-height: 400px;
+            // text-align: center;
+            // font-size: 50px;
+            display:flex;
+            justify-content: center;
+            align-items: center; 
+            .swiperBannerImg {
+              width: 100%;
+              height: 100%;
+              overflow: hidden;
+            }
+          }
+          .one-slide {
+            background: #4390EE;
+            color: #fff;
+          }
+          .two-slide {
+            background: rgb(131, 185, 110);
+            color: #fff;
+          }
+          .three-slide {
+            background: rgb(233, 115, 68);
+            color: #fff;
+          }
+        }
+        .swiper-pagination {
+          position: absolute;
+          bottom: 10px;
+          left: 0;
+          width: 100%;
+          text-align: center;
+          transition: .3s opacity;
+          transform: translate3d(0,0,0);
+          z-index: 10;
+          .swiper-pagination-bullet {
+            margin: 0 4px;
+            width: 8px;
+            height: 8px;
+            display: inline-block;
+            border-radius: 100%;
+            background: #000;
+            opacity: .2;
+          }
+          .swiper-pagination-bullet-active {
+            opacity: 1;
+            background: var(--swiper-pagination-color,var(--swiper-theme-color));
+          }
+        }
+      }
+      .MsgDivisonBanner {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        .MsgDivison {
+          width: 148px;
+          height: 100%;
+          display: table;
+          .wowo {
+            display: table-cell;
+            border-right: none;
+            text-align: center;
+            vertical-align: middle;
+            padding: 7px 8px 3px 3px;
+          }
+          .txth3 {
+            display: table-cell;
+            border-right: none;
+            text-align: center;
+            vertical-align: middle;
+            font-weight: bold;
+            font-size: 23px;
+          }
+        }
+      }
+    }
+    .hotMsgContainer {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .hotMsgBanner {
+        width: 800px;
+        height: auto;
+        .hotMsg {
+          cursor: pointer;
+          border-radius: 20px;
+          height: 100px;
+          margin-bottom: 20px;
+          background-color: rgb(253, 253, 249);
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          &:hover {
+            box-shadow: 2px 2px 10px #ddd;
+          }
+          .rank {
+            width: 20px;
+            height: 20px;
+            margin-left: 15px;
+            .rankNum {
+              font-size: 18px;
+              font-weight: bold;
+              color: chocolate;
+            }
+          }
+          .hotMsgImgbanner {
+            width: 80px;
+            width: 70px;
+            margin-left: 15px;
+            margin-right: 10px;
+            .hotMsgImg {
+              max-width: 100%;
+              max-height: 100%;
+            }
+          }
+          .hotMsgTextbanner {
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            .headline {
+              display: block;
+              flex: 1;
+              font-size: 21px;
+              overflow: hidden;/*超出部分隐藏*/
+              text-overflow:ellipsis;/* 超出部分显示省略号 */
+              white-space: nowrap;
+            }
+            .hotNum {
+              display: block;
+              margin-right: 20px;
+              margin-left: 10px;
+              width: 50px;
+              line-height: 20px;
+              font-size: 14px;
+              color: rgb(189, 182, 173);
+            }
+          }
+          .hotMsgNumberbanner {
+            width: 40px;
+            height: 40px;
+            position: relative;
+            .hotMsgNumberBgImg {
+              width: 100%;
+              height: 100%;
+              background-image: url('../../static/火.png');
+              background-repeat: no-repeat;
+            }
+          }
+        }
+      }
+    }
+  }
+}

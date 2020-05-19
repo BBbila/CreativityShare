@@ -1,0 +1,1 @@
+export const CLICK_PUSH_COMMENT = 'CLICK_PUSH_COMMENT'

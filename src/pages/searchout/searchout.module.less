@@ -1,0 +1,248 @@
+.searchoutWrap {
+  height: auto;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  padding-left: 207px;
+  padding-right: 207px;
+  padding-top: 128px;
+  overflow: hidden;
+  background-color: #eaddf0b0;
+  :global {
+    .searchout_head {
+      width: 100%;
+      height: 30px;
+      box-sizing: border-box;
+      //background-color: gray;
+      margin-bottom: 50px;
+      padding-left: 40px;
+      padding-right: 60px;
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      .headResult {
+        flex:1;
+        text-align: left;
+        line-height: 30px;
+        //background-color: green;
+        color: rgba(139, 0, 139, 0.726);
+      }
+      .sortBanner {
+        width: 100px;
+        height: 100%;
+        //background-color: rgb(121, 56, 56);
+        display: flex;
+        flex-direction: row;
+        .sort_name {
+          width: 80px;
+          height: 100%;
+          //background-color: rgb(211, 214, 51);
+          text-align: center;
+          line-height: 30px;
+          font-size: 16px;
+        }
+        .sort_icon {
+          width: 20px;
+          height: 100%;
+          //background-color: rgb(48, 108, 199);
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+          .sicon {
+            width: 20px;
+            height: 20px;
+          }
+        }
+        .Pop {
+          position: absolute;
+          top: 30px;
+          right: 60px;
+          z-index: 10;
+          width: 98px;
+          height: 60px;
+          padding: 2px 0px 6px 0px;
+          background: rgb(252, 242, 252);
+          box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
+          border-radius: 4px;
+          visibility: hidden;
+          .Pop_ul {
+            list-style: none;
+            width: 98px;
+            height: 60px;
+            margin: 0;
+            border: 0;
+            padding: 0;
+            text-align: center;
+            li {
+              width: 48px;
+              height: 30px;
+              display: list-item;
+              text-align: -webkit-match-parent;
+              padding-left: 17px;
+              padding-right: 33px;
+              border: 0;
+              margin: 0;
+              text-decoration: none;
+              font-size: 12px;
+              color: rgba(51, 51, 51, 1);
+              line-height: 30px;
+            }
+            li:hover {
+              background: rgb(194, 170, 199);
+              cursor: pointer;
+              color: rgb(252, 242, 252);
+            }
+          }
+        }
+      }
+      .sortBanner:hover > .Pop{
+        visibility: visible;
+      }
+    }
+    .noresultbanenr {
+      width: 100%;
+      height: auto;
+      //background-color: darkmagenta;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      .noresultTips {
+        width: 100%;
+        height: auto;
+        //background-color: darkmagenta;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 60px;
+        .noresultImg {
+          width: 48px;
+          height: 48px;
+        }
+      }
+      .nosearchout_head {
+        width: 100%;
+        height: 30px;
+        box-sizing: border-box;
+        //background-color: gray;
+        margin-bottom: 20px;
+        padding-left: 40px;
+        padding-right: 60px;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        .headNoResult {
+          flex:1;
+          font-weight: bold;
+          text-align: left;
+          line-height: 30px;
+          //background-color: green;
+          color: rgba(139, 0, 139, 0.726);
+        }
+      }
+      .postwrap {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-content: flex-start;
+        //background-color: burlywood;
+        .postbanner {
+          width: 1080px;
+          height: auto;
+          display: flex;
+          flex-flow: row wrap;
+          //background-color: rgb(135, 222, 150);
+          .post {
+            width: 140px;
+            height: 200px;
+            //background-color: cornflowerblue;
+            margin-bottom: 60px;
+            margin-left: 40px;
+            cursor: pointer;
+            .postCover {
+              width: 140px;
+              height: 160px;
+              border-radius: 10px;
+              background-color: rgb(157, 174, 207);
+              overflow: hidden;
+              .cover {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+              }
+            }
+            .postHeaderBanner {
+              width: 100px;
+              height: 40px;
+              //background-color: rgb(122, 189, 59);
+              .postTitle {
+                width: 135px;
+                height: auto;
+                padding-left: 6px;
+                //background-color: rgb(35, 128, 73);
+                font-size: 13px;
+                color: darkslategrey;
+                line-height: 30px;
+                font-weight: bold;
+                overflow: hidden;
+                text-overflow:ellipsis;
+                white-space: nowrap;
+              }
+              .postotherdesBanner {
+                width: 140px;
+                height: auto;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                //background-color: rgb(203, 233, 216);
+                .postDate {
+                  font-size: 10px;
+                  //color: rgba(128, 128, 128, 0.76);
+                  width: 60px;
+                  height: 100%;
+                  line-height: 24px;
+                  padding-left: 6px;
+                  //background-color: dimgray;
+                }
+                .postLove {
+                  width:30px;
+                  height: 10px;
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  margin-left: 10px;
+                  //background-color: rgb(214, 107, 107);
+                  .love {
+                    width: 10px;
+                    height: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .LImg {
+                      width: 10px;
+                      height: 10px;
+                    }
+                  }
+                  .lovenum {
+                    font-size: 10px;
+                    color: rgba(8, 7, 7, 0.76);
+                    line-height: 10px;
+                  }
+                }
+              }
+            }
+            &:hover {
+              .postCover {
+                box-shadow: 2px 2px 10px #ddd;
+              }
+              .postTitle {
+                color: #611b58;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

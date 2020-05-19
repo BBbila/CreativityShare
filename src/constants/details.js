@@ -1,0 +1,1 @@
+export const GET_AUTHOR_MESSAGE = 'GET_AUTHOR_MESSAGE';
